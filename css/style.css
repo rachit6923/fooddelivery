@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+     
+}
+#logo{
+    margin: 4px 5px;
+}
+#logo img {
+    height: 75px;
+    margin: 4px 8px;
+    border: 2px solid black;
+    border-radius: 55px;
+    padding: 3px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .3;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+     
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 23px;
+    border-radius: 23px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background-image: url('https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/2021-06/Food-delivery.jpg') ;
+    background-repeat: no-repeat;
+    height: 1000%;
+    width: 1000%;
+    z-index: -1;
+    opacity: .3;
+}   
